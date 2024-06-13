@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+
+    --text-color: #302e29;
+    --main-color: #52473a;
+    --second-color: #858585;
+    --bg-color: #fcfaf8;
+    --big-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 15%;
+    transition: all .40s ease;
+}
+
+.Navbar {
+    display: flex;
+}
+
+.Navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 2px 25px;
+    border-bottom: 2px solid transparent;
+    transition: all .40s ease;
+
+}
+
+.Navbar a:hover {
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.h-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px 22px;
+    background: var(--main-color);
+    border-radius: 5rem;
+
+}
+
+.h-icon i {
+    font-size: 28px;
+    color: var(--bg-color);
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: var(--bg-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 90px 15% 80px;
+}
+
+.Home {
+    height: 88vh;
+    width: 100%;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.Home-img img {
+    width: 100%;
+    height: auto;
+
+}
+
+.Home-text h1 {
+    font-size: xx-large;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.Home-text p {
+    font-size: large;
+    font-weight: 500;
+    color: black;
+    line-height: 32px;
+    margin-bottom: 2.3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5rem;
+    transition: all .40s ease;
+}
+
+.btn:hover {
+    letter-spacing: 1px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.main-text h2 {
+    font-size: var(--p-font);
+    margin-bottom: 10px;
+}
+
+.main-text p {
+    font-size: large;
+    font-weight: 500;
+    color: var(--second-color);
+    line-height: 30px;
+}
+
+.container-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.c-mainbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 10px;
+    height: 90px;
+    background-color: grey;
+    box-shadow: rgba(19, 19, 20, 0.15) 0px 48px 100px 0px;
+    transition: all .40s ease;
+}
+
+.container-textp {
+    font-size: large;
+    font-weight: 500;
+}
+
+.c-mainbox:hover {
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img {
+    padding-top: 50px;
+    height: auto;
+
+}
+
+.about-text h2 {
+    font-size: large;
+    margin-bottom: 2rem;
+
+    line-height: 1.3;
+}
+
+.about-text p {
+    font-size: medium;
+    color: black;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 2.5rem;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.row {
+    transition: all .40s ease;
+}
+
+.row:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    padding: 50px 15% 40px;
+
+}
+
+.main-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.contact-content h4 {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-content li {
+    margin-bottom: 16px;
+}
+
+.contact-content li a {
+    display: block;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .40s ease;
+    gap: 2rem;
+}
+
+.contact-content li a:hover {
+
+    transform: translateX(10px);
+
+    color: var(--main-color);
+
+}
